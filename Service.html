@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Services</title>
+    <link rel="stylesheet" href="Service.css">
+
+</head>
+<body>
+    <span class="menu-toggle">&#9776;</span> <!-- Hamburger icon -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Service.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Pure Organic Honey Services</h1>
+        <p>Your Source of the Finest Honey Products</p>
+    </header>
+
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Raw Honey Supply</h3>
+            <p>We provide pure, unprocessed raw honey directly from our beehives.</p>
+        </div>
+        <div class="service-item">
+            <h3>Honey Packaging</h3>
+            <p>Custom packaging solutions for various honey products, tailored to your needs.</p>
+        </div>
+        <div class="service-item">
+            <h3>Honey Consultation</h3>
+            <p>Get expert advice on the best honey types for your business or personal use.</p>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Honey Services. All rights reserved.</p>
+    </footer>
+
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

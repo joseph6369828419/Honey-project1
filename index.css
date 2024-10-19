@@ -1,0 +1,187 @@
+/* Base styles */
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width/height */
+}
+
+img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+div {
+    max-width: 100%; /* Ensure the container takes up full width if needed */
+    overflow: hidden; /* Prevent elements from causing horizontal scroll */
+}
+
+nav {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding-left: 100px;
+    text-decoration: none;
+    color: white;
+}
+
+div h1 {
+    position: absolute;
+    top: 3%;
+    left: 15%;
+}
+
+/* Hamburger icon */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Gap between the grid items */
+    padding: 20px;
+}
+
+.product-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.discount {
+    font-size: 1.2em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        top: 10%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding-left: 0;
+    }
+}
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    background-color: wheat;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.order-btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background-color: #f0e68c; /* Slightly lighter wheat color on hover */
+}
+
+.order-btn a:hover {
+    color: #333; /* Darken the text color on hover */
+}
+
+/* Responsive styles for mobile screens between 450px and 750px */
+@media (min-width: 350px) and (max-width: 750px) {
+    nav {
+        top: 1%;
+        left: 1%;
+        width: 90%;
+    }
+
+    div h1 {
+        top: 2%;
+        left: 30%;
+        display: none;
+        font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+
+    .order-btn {
+        top: 10%; /* Adjusted button position for smaller screens */
+        left: 15%; /* Centered the button better */
+    }
+
+    .order-btn a {
+        font-size: 18px; /* Adjusted link font size */
+    }
+
+    .order-btn {
+        top: 11%;
+        left: 15%; /* Centered the button better */
+        padding: 12px 24px;
+    }
+
+    .order-btn a {
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        position: absolute;
+        top: 1%;
+        left: 12%;
+        font-size: 30px;
+        color: white;
+    }
+}

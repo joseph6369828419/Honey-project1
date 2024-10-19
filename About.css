@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fdf7e3;
+  color: #4a3c28;
+  padding: 20px;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f4c542;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #f09d29;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #f4c542;
+  padding: 10px;
+
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff9e6;
+  border: 2px solid #f4c542;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #e68a00;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #4a3c28;
+  margin-top: 10px;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #f4c542;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #cc6600;
+  margin-bottom: 10px;
+}
+
+section p, section ul {
+  font-size: 1.1rem;
+}
+
+section ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4a3c28;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Responsive Styles: 350px to 750px */
+@media (max-width: 750px) and (min-width: 350px) {
+  .menu-toggle {
+      display: block;
+    position: absolute;
+    left: 3%;
+    color: yellowgreen;
+     
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav ul.active {
+      display: flex;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+
+  header p {
+      font-size: 1rem;
+  }
+
+  section h2 {
+      font-size: 1.5rem;
+  }
+
+  section p, section ul {
+      font-size: 1rem;
+  }
+
+  footer {
+      font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <h1>Honey</h1>
+        <span class="menu-icon">&#9776;</span> <!-- Hamburger icon -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="images/Honey-project.jpg" alt="">
+        </div>
+        <div class="order-btn">
+            <a href="https://online-sales-react-project1.onrender.com">Order Now</a>
+        </div>
+    </div>
+    <div class="product-grid">
+        <div class="product-box">
+          <img src="product-image.jpg" alt="Product Image" class="product-image">
+          <h2 class="product-name">Product Name 1</h2>
+          <p class="discount">10% Discount</p>
+        </div>
+      
+        <div class="product-box">
+          <img src="product-image.jpg" alt="Product Image" class="product-image">
+          <h2 class="product-name">Product Name 2</h2>
+          <p class="discount">10% Discount</p>
+        </div>
+      
+        <div class="product-box">
+          <img src="product-image.jpg" alt="Product Image" class="product-image">
+          <h2 class="product-name">Product Name 3</h2>
+          <p class="discount">10% Discount</p>
+        </div>
+      
+        <div class="product-box">
+          <img src="product-image.jpg" alt="Product Image" class="product-image">
+          <h2 class="product-name">Product Name 4</h2>
+          <p class="discount">10% Discount</p>
+        </div>
+      
+        <div class="product-box">
+          <img src="product-image.jpg" alt="Product Image" class="product-image">
+          <h2 class="product-name">Product Name 5</h2>
+          <p class="discount">10% Discount</p>
+        </div>
+      
+        <div class="product-box">
+          <img src="product-image.jpg" alt="Product Image" class="product-image">
+          <h2 class="product-name">Product Name 6</h2>
+          <p class="discount">10% Discount</p>
+        </div>
+      
+        <div class="product-box">
+          <img src="product-image.jpg" alt="Product Image" class="product-image">
+          <h2 class="product-name">Product Name 7</h2>
+          <p class="discount">10% Discount</p>
+        </div>
+      
+        <div class="product-box">
+          <img src="product-image.jpg" alt="Product Image" class="product-image">
+          <h2 class="product-name">Product Name 8</h2>
+          <p class="discount">10% Discount</p>
+        </div>
+      </div>
+      
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav ul');
+
+        menuIcon.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
